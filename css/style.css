@@ -62,59 +62,61 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
-.Lpgenerator {
+.lpgenerator .container, .vitamin .container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.lpgenerator {
   background-color: #22252D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 81px; }
-  .Lpgenerator .Container {
-    max-width: 950px;
-    width: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .lpgenerator .container {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .Lpgenerator .Container__logo img {
+    .lpgenerator .container__logo img {
       margin: 9px 12px 0 3px;
       width: 184px;
       height: 55px; }
-    .Lpgenerator .Container .LpgeneratorBlock {
+    .lpgenerator .container .lpgenerator-block {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .Lpgenerator .Container .LpgeneratorBlock__items a {
+      .lpgenerator .container .lpgenerator-block__items a {
         color: white;
         opacity: .6;
         margin: 0 8px; }
-      .Lpgenerator .Container .LpgeneratorBlock__items a:hover {
+      .lpgenerator .container .lpgenerator-block__items a:hover {
         opacity: .9;
         border-bottom: 2px solid #ff8800; }
-    .Lpgenerator .Container .LpgeneratorButtons {
+    .lpgenerator .container .lpgenerator-buttons {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .Lpgenerator .Container .LpgeneratorButtons__entrance {
+      .lpgenerator .container .lpgenerator-buttons__entrance {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-      .Lpgenerator .Container .LpgeneratorButtons__entrance a {
+      .lpgenerator .container .lpgenerator-buttons__entrance a {
         color: white;
         margin: 0 15px 0 5px;
         padding-bottom: 1px; }
-      .Lpgenerator .Container .LpgeneratorButtons__entrance a:hover {
+      .lpgenerator .container .lpgenerator-buttons__entrance a:hover {
         border-bottom: 2px solid #ff8800;
         margin-top: 2px; }
-      .Lpgenerator .Container .LpgeneratorButtons__orang a {
+      .lpgenerator .container .lpgenerator-buttons__orang a {
         color: white;
         font-weight: 600; }
-      .Lpgenerator .Container .LpgeneratorButtons__orang {
+      .lpgenerator .container .lpgenerator-buttons__orang {
         width: 170px;
         height: 32px;
         background-color: #F98500;
@@ -128,6 +130,75 @@ body {
         -ms-flex-pack: center;
         justify-content: center;
         border-radius: 6px; }
-      .Lpgenerator .Container .LpgeneratorButtons__orang:hover {
+      .lpgenerator .container .lpgenerator-buttons__orang:hover {
         background-color: #e97d02;
         cursor: pointer; }
+
+.vitamin {
+  background-color: #2C3138;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 506px;
+  color: white; }
+  .vitamin__main {
+    padding: 37px 0; }
+  .vitamin__Svg {
+    width: 366px;
+    height: 91px; }
+  .vitamin .container .vitamin-title {
+    font-size: 30px;
+    margin: 1.2em 0 1.5em;
+    line-height: 42px; }
+    .vitamin .container .vitamin-title__item {
+      color: #FFD14B; }
+  .vitamin .container .vitamint-text__items {
+    font-size: 20px;
+    line-height: 42px; }
+  .vitamin .container .vitamint-text__items::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 8px;
+    background-color: #ffd14b;
+    border: 1px solid #ffd14b; }
+  .vitamin .container .vitamint-text__items:last-child::before {
+    background-color: #EA4335;
+    border: 1px solid #EA4335; }
+  .vitamin .container .vitamint-text__items:nth-child(2)::before {
+    background-color: #4285F4;
+    border: 1px solid #4285F4; }
+  .vitamin .container .vitamin-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .vitamin .container .vitamin-end__detail {
+      margin-right: 52px; }
+    .vitamin .container .vitamin-end__detail, .vitamin .container .vitamin-end__registration {
+      background-color: #921D7C;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 35px;
+      font-size: 24px;
+      font-weight: 600;
+      width: 334px;
+      height: 54px; }
+    .vitamin .container .vitamin-end__detail a, .vitamin .container .vitamin-end__registration a {
+      color: white; }
+    .vitamin .container .vitamin-end__registration {
+      background-color: #47C26F; }
+    .vitamin .container .vitamin-end__detail:hover {
+      background-color: #831e70; }
+    .vitamin .container .vitamin-end__registration:hover {
+      background-color: #44af68; }

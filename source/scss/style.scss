@@ -2,22 +2,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.Lpgenerator {
+%container {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.lpgenerator {
     background-color: #22252D;
     display: flex;
     height: 81px;
-    .Container {
-        max-width: 950px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
+    .container {
+        @extend %container;
         align-items: center;
         &__logo img {
             margin: 9px 12px 0 3px;
             width: 184px;
             height: 55px;
         }
-        .LpgeneratorBlock {
+        .lpgenerator-block {
             display: flex;
             &__items a {
                 color: white;
@@ -29,7 +32,7 @@ body {
                 border-bottom: 2px solid rgb(255, 136, 0);
             }
         }
-        .LpgeneratorButtons {
+        .lpgenerator-buttons {
             display: flex;
             &__entrance {
                 align-items: center;
@@ -60,6 +63,86 @@ body {
             &__orang:hover {
                 background-color: rgb(233, 125, 2);
                 cursor: pointer;
+            }
+        }
+    }
+}
+.vitamin {
+    background-color: #2C3138;
+    display: flex;
+    height: 506px;
+    color: white;
+    &__main {
+        padding: 37px 0;
+    }
+    &__Svg {
+        width: 366px;
+        height: 91px;
+    }
+    
+    .container {
+        @extend %container;
+        .vitamin-title {
+            font-size: 30px;
+            margin: 1.2em 0 1.5em;
+            line-height: 42px;
+            &__item {
+                color: #FFD14B;
+            }
+        }
+        .vitamint-text {
+            &__items {
+                font-size: 20px;
+                line-height: 42px;
+            }
+            &__items::before {
+                content: "";
+                width: 19px;
+                height: 19px;
+                border-radius: 50px;
+                display: inline-block;
+                margin-right: 8px;
+                background-color: #ffd14b;
+                border: 1px solid #ffd14b;
+            }
+            &__items:last-child::before {
+                background-color: #EA4335;
+                border: 1px solid #EA4335;
+            }
+            &__items:nth-child(2)::before {
+                background-color: #4285F4;
+                border: 1px solid #4285F4;
+            }
+        }
+        .vitamin-end {
+            display: flex;
+            &__detail {
+                margin-right: 52px;
+            }
+            &__detail ,&__registration {
+                background-color: #921D7C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                cursor: pointer;
+                margin-top: 35px;
+                font-size: 24px;
+                font-weight: 600;
+                width: 334px;
+                height: 54px;
+            }
+            &__detail a,&__registration a{
+                color: white;
+            }
+            &__registration {
+                background-color: #47C26F;
+            }
+            &__detail:hover {
+                background-color: rgb(131, 30, 112);
+            }
+            &__registration:hover {
+                background-color: rgb(68, 175, 104);
             }
         }
     }
